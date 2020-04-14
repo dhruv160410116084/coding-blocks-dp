@@ -25,22 +25,7 @@ class Tilling{
     }
 
     static long countNumWays(int n,int m,long dp[]){
-        //  System.out.println("n: "+n+" m: "+m);
-        //  if(n <=0 || m<=0)
-        //     return 0;
-        // if(n<m){
-        //     return 1;
-        // }
-        // if(n==m)
-        //     return 2;
-        // if(dp[n] != 0){
-        //     // System.out.println("DP IS USED");
-        //     return dp[n];
-
-        // }
-        // int ctr=0;
-        // return dp[n]=countNumWays(n-1,m,dp)+countNumWays(n-m, m,dp);
-        // try  {
+  
         
             for(int i=1;i<=n;i++){
                dp[i] = dp[i-1];
@@ -48,10 +33,7 @@ class Tilling{
                dp[i]%=1000000007;
              }
            
-        // } catch (Exception e) {
-            //TODO: handle exception
-            // System.out.println(" ctr = "+ctr);
-        // }
+   
         return (dp[n]);
     }
 
