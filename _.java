@@ -20,4 +20,13 @@ public class _ {
             //TODO: handle exception
         }
     }
+
+    static int[] takeInputArray(String str, int len) {
+        StringTokenizer st = new StringTokenizer(str);
+        int arr[] = new int[len];
+        for (int i = 0; i < len; i++) {
+            arr[i] = parseInt(st.nextToken());
+        }
+        return arr;
+    }
 }
