@@ -30,4 +30,12 @@ public class _ {
         }
         return arr;
     }
+    static long[] takeInputArrayLong(String str, int len) {
+        StringTokenizer st = new StringTokenizer(str);
+        long arr[] = new long[len];
+        for (int i = 0; i < len; i++) {
+            arr[i] = parseLong(st.nextToken());
+        }
+        return arr;
+    }
 }
