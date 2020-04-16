@@ -20,7 +20,7 @@ class Cellmitosis {
         }
   }
 
-  static long solve(int i,int x,int y,int z,int dp[]){
+  static long solve(int i,int x,int y,int z,long dp[]){
   if(i<0)
     return 0;
       if(i==1)
