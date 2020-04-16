@@ -50,7 +50,7 @@ public class JobBounties {
 
     static int solve(char arr[]){
         Stack<Integer> stack = new Stack<Integer>();
-        //  stack.push(-1);
+         stack.push(-1);
         int maxLen = 0;
 
         for(int i=0;i<arr.length;i++){
